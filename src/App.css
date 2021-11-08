@@ -1,0 +1,122 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgba(100, 100, 100, 0.25);
+}
+
+ol, ul {
+  list-style: none;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+main {
+  padding-bottom: 2em;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  section {
+    align-items: stretch;
+    justify-content: space-between;
+    padding-bottom: 5em;
+  }
+}
+
+.movie-page {
+  padding: 1em;
+  margin: 1.2em 0;
+  background-color: rgba(100, 100, 100, 0.15);
+  border-radius: 10px;
+}
+
+.movie-page h1, .movie-page h2 {
+  letter-spacing: 0.05em;
+  margin: 1em 0;
+}
+
+.movie-page h1 {
+  display: inline-block;
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 900;
+}
+
+@media (min-width: 1024px) {
+  .movie-page h1 {
+    font-size: 1.65rem;
+  }
+}
+
+.movie-page h1::after {
+  position: absolute;
+  content: "";
+  bottom: -10px;
+  left: 0;
+  background-color: coral;
+  height: 2px;
+  width: 105%;
+  border-radius: 8px;
+}
+
+@media (min-width: 1024px) {
+  .movie-page h1::after {
+    height: 5px;
+  }
+}
+
+.movie-page h2 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .movie-page h2 {
+    font-size: 1.4rem;
+  }
+}
+
+.movie-page img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 1.5em auto;
+  box-shadow: 24px 26px 36px -26px;
+}
+
+.movie-page li {
+  font-size: 0.9rem;
+  padding: 0.5em 0;
+}
+
+@media (min-width: 1024px) {
+  .movie-page li {
+    font-size: 1.25rem;
+  }
+}
+
+.movie-page li + li {
+  border-top: 1px solid coral;
+}

@@ -1,0 +1,38 @@
+.inputs {
+  --fsize: 0.75rem;
+
+  padding: 1.4em 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid coral;
+}
+
+.inputs label {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-right: 0.2em;
+  font-size: var(--fsize);
+}
+
+.inputs input {
+  font-size: var(--fsize);
+  padding: 0.25em;
+  border-radius: 8px;
+}
+
+@media (min-width: 768px) {
+  .inputs {
+    --fsize: 1.2rem;
+  }
+}
+
+.inputs a {
+  display: block;
+  padding: 0.5em;
+  text-decoration: none;
+  background-color: #43a4dc;
+  color: white;
+  margin-left: auto;
+  border-radius: 5px;
+  font-size: var(--fsize);
+}

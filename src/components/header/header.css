@@ -1,0 +1,25 @@
+header {
+  padding: 0.7em 0;
+  background-color: rgba(90, 90, 90, 0.7);
+  border-bottom: 1px solid coral;
+}
+
+header a {
+  --primary: ghostwhite;
+  --secondary: palegoldenrod;
+
+  display: inline-block;
+  overflow: hidden;
+  text-decoration: none;
+  padding: 0.2em 0;
+  color: var(--primary);
+  border-bottom: 1px solid var(--primary);
+  transition: border-bottom-color 0.15s, color 0.3s 0.15s, transform 0.3s 0.45s;
+  letter-spacing: 0.1em;
+}
+
+header a:hover {
+  border-bottom-color: var(--secondary);
+  color: var(--secondary);
+  transform: scale(1.02);
+}
